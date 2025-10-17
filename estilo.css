@@ -1,0 +1,703 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--branco);
+}
+
+:root{
+    --azulescuro: #2364AA;
+    --azul: #3DA5D9;
+    --azulclaro: #73BFB8;
+    --amarelo: #FFC300;
+    --laranja: #EA7317;
+    --azuldasruas: #14213D;
+    --branco: #FDF0D5;
+    --fonte-titulo: "Geologica", sans-serif;
+    --fonte-texto: "Inter", sans-serif;
+}
+.container{
+    max-width: 1202px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body{
+    font-family: var(--fonte-texto);
+}
+
+#topo{
+    width: 100%;
+    min-height: 125px;
+    background-color: var(--azuldasruas);
+}
+
+#lads{
+    padding: 10px 19px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--amarelo);
+}
+
+#menu-top{
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--amarelo);
+    display: flex;  
+    flex-direction:column ;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo > img{
+    width: 70px;
+    height: auto;
+}
+
+#pesq{
+    width: 100%;
+    max-width: 737px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    background-color: var(--branco);
+}
+
+#pesq > input{
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    background-color: var(--branco);
+}
+
+#pesq > button{
+    border: none;
+    background: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#pesq > img{
+    width: 20px;
+    height: 20px;
+}
+
+.menu-nav{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu-nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    list-style: none;
+    font-size: 25px;
+}
+
+.menu-nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu-nav a:hover{
+    color: var(--azulescuro);
+}
+
+.menu-nav > img{
+    width: 12px;
+    margin-left: 5px;
+}
+
+.icones-menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icones-menu > img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#user-icone{
+    display: none;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: var(--branco);
+    border: 1px solid var(--laranja);
+    height: 90px;
+    width: 150px;
+    z-index: 1;
+    margin: 5px;
+    padding: 10px;
+}
+
+#user-icone p{
+    font-weight: 700;
+}
+
+#user-icone a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#user-icone a:hover{
+    color: var(--azul);
+}
+
+.icones-menu:hover #user-icone{
+    display: block;
+}
+
+.grid-topo{
+    display: grid;
+    grid-template-columns: 150px 1fr auto auto;
+    align-items: center;
+    gap: 70px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#banner-principal {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to right, var(--amarelo), var(--azulescuro));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.conteudo-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1100px;
+}
+
+
+.texto-banner {
+    text-align: left;
+    color: black;
+    font-family: var(--fonte-titulo);
+    font-size: 25px;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.text-azul{
+    color:var(--azulescuro);
+}
+
+#info{
+    padding: 30px 0;
+    background-color: var(--branco);
+}
+
+.icones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icones > img{
+    width: 80px;
+    height: auto;
+}
+
+.icones{
+    gap: 30px;
+    padding: 10px 0;
+}
+
+#celulares{
+    padding: 60px 0;
+    background-image: linear-gradient(to top, var(--azuldasruas), var(--azulescuro));
+}
+
+.produtos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.produtos > article{
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.produtos > article > img{
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#titul-cel{
+    color: var(--branco);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.text-branco{
+    color: var(--branco);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom:15px ;
+}
+
+.produtos article a img{
+    width: 50px;
+    opacity: 0.8;
+    transition: transform 0.3 ease, opacity 0.3 ease;
+}
+
+#rodape{
+    position: relative;
+    background-color: var(--branco);
+    padding: 40px 0 0 0;
+    font-family: var(--fonte-texto);
+    overflow: hidden;
+}
+
+.grid-rodape{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    align-items: start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.grid-rodape > h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.grid-rodape > ul{
+    padding: 0;
+}
+
+.grid-rodape > li{
+    margin-bottom: 5px;
+}
+
+.grid-rodape a{
+    text-decoration: none;
+    color: var(--laranja);
+    font-size: 13px;
+}
+
+.grid-rodape a:hover{
+    color: var(--azuldasruas);
+}
+
+.logopeque{
+    display: flex;
+    justify-content: center;
+}
+
+.logopeque > img{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+#redes{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#redes > img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+#paga{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#paga > img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.barra-abaixo{
+    background-color: var(--azulescuro);
+    color: var(--azuldasruas);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 80px;
+    margin-top: 0;
+    width: 100%;
+}
+
+.barra-abaixo > img{
+    width: 50px;
+    height: auto;
+}
+
+.barra-abaixo > p{
+    color: var(--azuldasruas);
+    margin: 0;
+    font-size: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+#barra-amarela{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: var(--amarelo);
+    z-index: 0;
+}
+
+#barra-amarela-sobrenos{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: var(--amarelo);
+    z-index: 0;
+}
+
+#conteudo{
+    width: 100%;
+    background-color: var(--branco);
+}
+
+.area-interna{
+    min-height:600px;
+    padding: 10px 20px;
+}
+
+.area-interna > h3{
+    font-family: var(--fonte-texto);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--azul);
+    margin: 20px 0;
+}
+
+.area-interna > p{
+    font-size: 1.15rem;
+    color: var(--azuldasruas);
+    line-height: 150%;
+    text-indent: 24px;
+    margin-bottom: 13px;
+    text-align: justify;
+}
+
+.area-interna .imagem-dono{
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px;
+    float: right;
+    align-items: center;
+}
+
+.area-interna .imagem-esquerda{
+     width: 150px;
+    height: auto;
+    border-radius: 20px;
+    margin: 5px;
+    float: left;
+    align-items: center;
+}
+
+.conteudo-novidades{
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.novidade{
+    background-color: var(--amarelo);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px black;
+}
+
+.novidade > h2{
+    color: var(--azuldasruas);
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+#trabalhe{
+    background-color: var(--branco);
+    color: var(--azuldasruas);
+    padding: 60px 20px;
+    font-family: var(--fonte-texto);
+    min-height: 100vh;
+}
+
+.intro-trabalho{
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.intro-trabalho > h1{
+    font-family: var(--fonte-titulo);
+    color: var(--azuldasruas);
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+}
+
+.intro-trabalho > p1{
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.requisitos{
+    max-width: 800px;
+    margin: 0 auto 40px;
+    background: var(--branco);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 8px black;
+}
+
+.requisitos > h2{
+    color: var(--azuldasruas);
+    margin-bottom: 15px;
+}
+
+.requisitos > ul{
+    list-style: none;
+    padding: 0;
+}
+
+.requisitos > li{
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.candidatura{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.candidatura h2{
+    color: var(--laranja);
+    margin-bottom: 15px;
+}
+
+.candidatura #gmail{
+    color: var(--azulescuro);
+    font-size: 1.1rem;
+
+}
+
+#vendas {
+    background-image: linear-gradient(to bottom, var(--azulescuro), var(--azul));
+    font-family: var(--fonte-texto);
+    padding-bottom: 60px;
+}
+
+.banner-produtos {
+    text-align: center;
+    padding: 60px 20px 30px;
+    background-color: var(--azulclaro);
+    color: var(--azuldasruas);
+}
+
+.banner-produtos h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.2rem;
+    margin-bottom: 10px; 
+}
+
+.banner-produtos p {
+    font-size: 1.1rem;
+}
+
+.filtros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.filtros input, .filtros select{
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 250px;
+}
+
+.grid-prosutos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.produto{
+    background-color: var(--branco);
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px black;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-8px);
+}
+
+.produto img{
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.produto h2{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--azuldasruas);
+}
+
+.produto p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--azul);
+    margin-bottom: 10px;
+}
+
+.btn-comprar{
+    background-color: var(--azulescuro);
+    color: var(--branco);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover{
+    background-color: var(--azul);
+}
+
+#produto-detalhe {
+    background-color: #f5f7fa;
+    padding: 80px 0;
+    font-family: var(--fonte-texto);
+}
+
+.produtos-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background-color: var(--branco);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px black;
+}
+
+.produto-imagem img {
+    width: 450px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.produto-imagem img:hover{
+    transform: scale(1.05);
+}
+
+.produto-info h1{
+    font-size: 2.3rem;
+    color: var(--azuldasruas);
+    margin-bottom: 15px;
+}
+
+.produto-info .descricao {
+    font-size: 1rem;
+    color: var(--azuldasruas);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.especificacoes {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.especificacoes li{
+    background-color: var(--amarelo);
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--laranja);
+}
+
+.preco{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--azulescuro);
+    margin-bottom: 25px;
+}
+
+.btn-comprar-produto {
+    display: inline-block;
+    background-color: var(--azulescuro);
+    color: var(--branco);
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-comprar-produto:hover{
+    background-color: var(--amarelo);
+    color: var(--azulclaro);
+    transform: scale(1.05);
+}

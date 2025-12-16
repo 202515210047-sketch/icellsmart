@@ -36,40 +36,60 @@
                         <li> <a href="celulares.html">Categorias<img src="imagem/left-arrow 2.png" > </a></li>
                         <li> <a href="sobrenos.html">Sobre nos</a></li>
                         <li> <a href="novidades.html">Novidades!</a></li>
-                        <li> <a href="formulario.html">Faça seu formulario de contato</a></li>
-
+                        <li> <a href="trabalheconosco.html">Trabalhe conosco</a></li>
                     </ul>
             </nav>
         </div>
     </div>
     </header>
 
-    <main id="trabalhe">
-    <section class="intro-trabalho">
-      <h1>Trabalhe Conosco</h1>
-      <p>Na <strong>iCellSmart</strong>, acreditamos que tecnologia e atendimento andam juntos. 
-      Estamos em constante crescimento e buscamos pessoas apaixonadas por inovação, tecnologia e 
-      por oferecer a melhor experiência aos nossos clientes.</p>
+    <main id="contato">
+    <section class="banner-pagina">
+        <div class="container">
+            <h1>Fale com a <span class="text-azul">iCellSmart</span></h1>
+            <p>Estamos prontos para te atender. Preencha o formulário abaixo.</p>
+        </div>
     </section>
 
-    <section class="requisitos">
-      <h2>Requisitos para fazer parte da equipe:</h2>
-      <ul>
-        <li>Experiência na área de <strong>Tecnologia da Informação (TI)</strong>;</li>
-        <li>Conhecimento básico sobre smartphones, tablets e acessórios;</li>
-        <li>Experiência prévia ou afinidade com a área de <strong>comércio e vendas</strong>;</li>
-        <li>Boa comunicação e trabalho em equipe;</li>
-        <li>Vontade de aprender e crescer junto com a empresa.</li>
-      </ul>
-    </section>
+    <section class="formulario-contato container">
+        <form id="form-contato">
+            
+            <div class="campo">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
 
-    <section class="candidatura">
-      <h2>Como se candidatar:</h2>
-      <p>Envie seu currículo com o assunto <strong>“Trabalhe Conosco iCellSmart”</strong> para o e-mail:</p>
-      <p id="gmail">icellsmartcontato@gmail.com</p>
-      <p>Ou traga seu currículo diretamente em uma de nossas lojas físicas.</p>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="campo">
+                <label for="assunto">Assunto</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione</option>
+                    <option>Dúvidas</option>
+                    <option>Suporte</option>
+                    <option>Trabalhe conosco</option>
+                    <option>Outros</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-comprar">Enviar mensagem</button>
+
+        </form>
     </section>
-  </main>
+</main>
 
     <footer id="rodape"> 
         <div id="barra-amarela-sobrenos"></div>
